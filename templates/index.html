@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Friend List
+
+<p>=================================</p><br><br>
+
+{% for friend in friends %}
+<a href="{% url 'detail' friend.id %}">{{friend.username}}<br></a>
+{% endfor %}
+
+</body>
+</html>
